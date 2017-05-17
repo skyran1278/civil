@@ -11,6 +11,7 @@ import sass from 'gulp-sass';
 import uglify from 'gulp-uglify';
 import imagemin from 'gulp-imagemin';
 import cleanCSS from 'gulp-clean-css';
+import htmlmin from 'gulp-htmlmin';
 
 // 轉成 gulp 讀取的 vinyl（黑膠）流
 // 將常規流轉換為包含 Stream 的 vinyl 對象
@@ -150,6 +151,7 @@ gulp.task('html', ['cleanHtml'], () => {
           prefix: '@@',
           basepath: '@file'
         }))
+        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('./dist'))
         .pipe(browserSync.stream());
 });
