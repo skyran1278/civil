@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Frontend Kit</title>
+    <title>RC BIM　X　雲端現場查驗系統</title>
     <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
     <link rel="icon" href="./img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -24,7 +24,7 @@
                 <a class="navbar-brand" href="./index.html">
                     <img alt="Brand" src="./img/icon_48.png" onError="this.onerror=null;this.src='./img/icon700.svg;">
                 </a>
-                <a class="navbar-brand" href="./index.html">Frontend Kit</a>
+                <a class="navbar-brand" href="./index.html">RC BIM　X　雲端現場查驗系統</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -36,11 +36,35 @@
 
 
     <div class="container-fluid">
-        <div class="col-md-12">
-            <div>
-                <h1>Frontend Kit</h1>
+        <h3>Sign in</h3>
+        <hr>
+        <form id="add-form">
+            <div class="form-group">
+                <label for="project">Project ID</label>
+                <input type="project" class="form-control" name="project" id="project" placeholder="" required>
             </div>
-        </div>
+            <div class="form-group">
+                <label for="user">USER</label>
+                <select class="form-control" name="user" id="user" required>
+                    <option value="">Select</option>
+                    <option value="Brian">Brian</option>
+                    <option value="Macy">Macy</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="" required>
+            </div>
+            <div class="form-group">
+                <label for="check">Check</label>
+                <input type="text" class="form-control" name="check" id="check" placeholder="Not Case Sensitive" required>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+            <a href="./index1.html">
+                <button type="button" class="btn btn-default">Home</button>
+            </a>
+        </form>
     </div>
 
     <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>

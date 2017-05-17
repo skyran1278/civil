@@ -1,11 +1,35 @@
 @@include('./templates/header.html')
 
     <div class="container-fluid">
-        <div class="col-md-12">
-            <div>
-                <h1>Frontend Kit</h1>
+        <h3>Sign in</h3>
+        <hr>
+        <form id="add-form">
+            <div class="form-group">
+                <label for="project">Project ID</label>
+                <input type="project" class="form-control" name="project" id="project" placeholder="" required>
             </div>
-        </div>
+            <div class="form-group">
+                <label for="user">USER</label>
+                <select class="form-control" name="user" id="user" required>
+                    <option value="">Select</option>
+                    <option value="Brian">Brian</option>
+                    <option value="Macy">Macy</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="" required>
+            </div>
+            <div class="form-group">
+                <label for="check">Check</label>
+                <input type="text" class="form-control" name="check" id="check" placeholder="Not Case Sensitive" required>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+            <a href="./index1.html">
+                <button type="button" class="btn btn-default">Home</button>
+            </a>
+        </form>
     </div>
 
 @@include('./templates/footer.html')
