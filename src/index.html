@@ -1,35 +1,63 @@
 @@include('./templates/header.html')
 
     <div class="container-fluid">
-        <h3>Sign in</h3>
-        <hr>
-        <form id="add-form">
-            <div class="form-group">
-                <label for="project">Project ID</label>
-                <input type="project" class="form-control" name="project" id="project" placeholder="" required>
-            </div>
-            <div class="form-group">
-                <label for="user">USER</label>
-                <select class="form-control" name="user" id="user" required>
-                    <option value="">Select</option>
-                    <option value="Brian">Brian</option>
-                    <option value="Macy">Macy</option>
-                </select>
-            </div>
 
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" name="password" id="password" placeholder="" required>
-            </div>
-            <div class="form-group">
-                <label for="check">Check</label>
-                <input type="text" class="form-control" name="check" id="check" placeholder="Not Case Sensitive" required>
-            </div>
-            <button type="submit" class="btn btn-success">Submit</button>
-            <a href="./index1.html">
-                <button type="button" class="btn btn-default">Home</button>
-            </a>
-        </form>
+        <div class="text-center">
+            <h3>記錄點點滴滴</h3>
+            <h4>靈感隨時會出現。Evernote 讓您可以跨平台隨時捕捉靈感、沈澱醞釀、分享共用。</h4>
+        </div>
+        <hr>
+
+        <div class="text-center">
+            <form class="form-inline">
+                <div class="form-group">
+                    <!-- <label for="user">USER</label> -->
+                    <input type="text" class="form-control" name="user" id="firstUser" placeholder="User">
+                </div>
+                <div class="form-group">
+                    <!-- <label for="password">Password</label> -->
+                    <input type="password" class="form-control" name="password" id="firstPassword" placeholder="Password">
+                </div>
+                <!-- <div class="form-group">
+                    <label for="check">Check</label>
+                    <input type="text" class="form-control" name="check" id="check" placeholder="Not Case Sensitive" required>
+                </div> -->
+            </form>
+        </div>
+        <br>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-success">註冊</button>
+        </div>
+        <br>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-default">登入 Google</button>
+            <button type="submit" class="btn btn-default">登入 Facebook</button>
+        </div>
+        <hr>
+
+        <div class="text-center">
+            <h3>已經有帳戶？</h3>
+            <!-- <h4>靈感隨時會出現。Evernote 讓您可以跨平台隨時捕捉靈感、沈澱醞釀、分享共用。</h4> -->
+        </div>
+        <br>
+
+        <div class="text-center">
+            <form class="form-inline">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="user" id="user" placeholder="User">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                </div>
+            </form>
+        </div>
+        <br>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-success">登入</button>
+        </div>
     </div>
 
 @@include('./templates/footer.html')
